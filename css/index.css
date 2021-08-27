@@ -1,3 +1,30 @@
+* {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    background-color: rgb(236, 236, 234);
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 0px 10px;
+    
+}
+
+.main-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+
+
 
 .container {
     max-width: 500px;
