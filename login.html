@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+<style>
+    * {
+    margin: 0;
+    padding: 6px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(236, 236, 234);
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 0px 10px;
+}
+.main-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="main-container">
+
+    
+
+    <div class="container">
+        <h1 id="heading" >Login</h1>
+
+        <form action="noaction.php">
+            <div class="login-form">
+               
+                <div class="input-field">
+                    <label for="email">Email:</label>
+                    <input type="text" class="inputleft" name="Email" placeholder="Enter Your Email"></div>
+                <div class="input-field">
+                    <label for="password"> Password:</label>
+                    <input type="text" class="inputleft" name="Password" placeholder="Enter Your password"></div>
+                <div class="input-field">
+                    <input type="submit" id="btn" value="Submit">
+                    <input type="submit" id="btn" value="Cancle">
+                </div>
+                <p id="not-register"><a href="/registration.html">Not register?</a></p>
+            </div>
+        </form>
+    </div>
+
+    
+
+</div>
+
+</body>
+
+</html>

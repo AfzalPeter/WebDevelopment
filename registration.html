@@ -1,0 +1,147 @@
+                                                                                                                                                                                                                                                                                                                                 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    background-color: rgb(236, 236, 234);
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 0px 10px;
+    
+
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="heading" uppercase >REGISTRATION FORM </h1>
+
+
+        <form action="noaction.php">
+            <div class="login-form">
+
+                <div class="input-field">
+                    <label for="name" class="flable">User Name:</label>
+                    <input type="text" class="inputleft" name="name" placeholder="Enter your name">
+                </div>
+
+
+                <div class="input-field">
+                    <label for="email" class="flable">Email ID:</label>
+                    <input type="text" class="inputleft" name="email" placeholder="type email here">
+                </div>
+
+
+                <div class="input-field">
+                    <label for="password" class="flable">Password:</label>
+                    <input type="password" class="inputleft" name="password" placeholder="Enter your password">
+                </div>
+
+                <div class="input-field">
+                    <label for="password" class="flable">Confirm Password:</label>
+                    <input type="password" class="inputleft" name="password" placeholder="Enter your password">
+                </div>
+                
+                <div class="input-field">
+                    <label for="specialRole" class="flable">Team:</label>
+                    <select name="team" id="specialRole">
+                    <option value="admin">Team Leader</option>
+                    <option value="backAdmin">Senior Officer</option>
+                    <option value="backAdmin">Officer</option>
+                    </select>
+                    
+                </div>
+                
+
+                <div class="input-field">
+                    <label for="mName" class="flable">Manager Name:</label>
+                    <input type="text" class="inputleft" name="mName" placeholder="Manager name here">
+                </div>
+
+                
+                <div class="input-fieldn">
+                    <label for="myGender" class="check">Gender:</label>
+                    Male<input type="checkbox" name="myGender">
+                    Female<input type="checkbox" name="myGender">
+                    Other<input type="checkbox" name="myGender"> </div>
+
+                
+                <div class="input-field">
+                    <label for="specialRole" class="flable">Job Nature:</label>
+                    <select name="specialRole" id="specialRole">
+                    <option value="hourly">Hourly</option>
+                    <option value="half-time">Half-Time</option>
+                    <option value="full-time">Full-Time</option>
+                    </select>
+                </div>
+                       
+                
+                <div class="input-field">
+                    <label for="doJoining" class="flable">Date of Joining:</label>
+                    <input type="date" class="inputleft" name="doJoining" id="">
+                </div>
+                
+                
+                <div class="input-field">
+                    <label for="specialRole" class="flable">Working Role:</label>
+                    <select name="specialRole" id="specialRole">
+                    <option value="admin">Admin</option>
+                    <option value="backAdmin">Back-Admin</option>
+                    </select>
+                    
+                </div>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="termcheck" id="termcheck">Agree with term and condition
+                </label>
+
+
+                <div class="input-field">
+                    <input type="submit" id="btn" value="Submit">
+                    <input type="submit" id="btn" value="Cencel">
+                </div>
+                
+                <p id="not-register"><a href="/login.html">Already registered</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- #1: create a user RAA system (RAA ?)
+ core information
+
+password (encrypted)
+Extended Information
+Team 
+* ( may be multipe team)
+his/her Manager (reporting person)
+his/her role (lead, dev, qa) etc 
+* special role (admin, back-admin)
+His job nature (part time, full time, hourly basis, 
+consultant wise)
+CSS theme based HTML form 
+( moved to django, or any other framework)
+ -->
+
+
+</body>
+
+</html>
